@@ -4,7 +4,7 @@
 - More tools > Extensions
 - Enable developer mode in the top right corner
 - Click "Load unpacked"
-- Select the cloned "chrome" directory
+- Select the cloned "chrome" directory <br>
 The addon is now installed and ready to use.
 
 # TODO
