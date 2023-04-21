@@ -1,0 +1,24 @@
+{
+
+	"manifest_version": 2,
+	"name": "EnterLearning",
+	"version": "1.0",
+
+	"description": "Enables the use of 'Enter' on ItsLearning",
+	
+	"icons": {"48": "icon.jpeg"},
+
+	"permissions": [
+		"activeTab"
+	],
+
+	"content_scripts": [
+		{
+			"matches": ["https://*.itslearning.com/*"],
+			"js": ["EnterLearning.js"]
+		}
+	]
+
+
+
+}
