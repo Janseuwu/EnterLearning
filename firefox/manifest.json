@@ -3,10 +3,15 @@
 	"manifest_version": 2,
 	"name": "EnterLearning",
 	"version": "1.0",
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "EnterLearning@918238123"
+		}
+	},
 
 	"description": "Enables the use of 'Enter' on ItsLearning",
 	
-	"icons": {},
+	"icons": {"48": "icon.jpeg"},
 
 	"content_scripts": [
 		{
@@ -14,5 +19,7 @@
 			"js": ["EnterLearning.js"]
 		}
 	]
+
+
 
 }
