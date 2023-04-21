@@ -3,5 +3,4 @@ EnterLearning is a browser extension for itsLearning, that allows the user to se
 
 ## Installation
 First, clone the repo with `git clone`
-
-Navigate to your respective browser's directory and follow the directions to get started!
+Afterwards, simply navigate to your respective browser's directory and follow the directions in the README to get started!
