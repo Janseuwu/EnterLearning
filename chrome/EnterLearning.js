@@ -5,20 +5,18 @@ const class_list_search_xpath = "/html/body/form/header/div[1]/nav[1]/ul/li[2]/d
 var class_list_search = getElementByXpath(class_list_search_xpath);
 
 class_list_search.addEventListener("input", function() {
-	setTimeout(() => {
-		visible_classes = []
-		let class_list = getElementByXpath(class_list_xpath);
-		for (const child of class_list.children) {
-			if ( child.style.display == "none" ) {} else {visible_classes.push(child.firstElementChild)}
-		}
-		document.addEventListener("keyup", function(event) {
-			if ( event.keyCode == "13" ) {
-				visible_classes[0].click();	
-			};
-		});	
-	}, 200);
+	visible_classes = []
+	let class_list = getElementByXpath(class_list_xpath);
+	for (const child of class_list.children) {
+		if ( child.style.display == "none" ) {} else {visible_classes.push(child.firstElementChild)}
+	}
+	document.addEventListener("keyup", function(event) {
+		if ( event.keyCode == "13" ) {
+			visible_classes[0].click();	
+		};
+	});	
 });
 
 function getElementByXpath(path) {
-  return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+	return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 }
