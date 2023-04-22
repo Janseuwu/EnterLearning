@@ -22,7 +22,7 @@ The extension is now installed and ready to use.
 
 ### Firefox installation
 
-Currently can't sign the extension, which is required by Firefox for permanent
+We are currently waiting for a signature, which is required by Firefox for permanent
 installation. You can, however, install it temporarily using the `web-ext` tool
 or the `about:debugging` page.
 
