@@ -3,17 +3,20 @@ const CLASS_SEARCH_XPATH = "/html/body/form/header/div[1]/nav[1]/ul/li[2]/div/di
 
 let classListSearch = getElementByXpath(CLASS_SEARCH_XPATH);
 
-classListSearch.addEventListener("input", function() {
-	let visibleClasses = []
+classListSearch.addEventListener("input", () => {
+	let visibleClasses = [];
 	let classList = getElementByXpath(CLASS_LIST_XPATH);
 	for (const child of classList.children) {
-		if ( child.style.display == "none" ) {} else {visibleClasses.push(child.firstElementChild)}
+		if (child.style.display !== "none") {
+			visibleClasses.push(child.firstElementChild);
+		}
 	}
-	document.addEventListener("keyup", function(event) {
-		if ( event.keyCode == "13" ) {
-			visibleClasses[0].click();	
-		};
-	});	
+
+	document.addEventListener("keyup", event => {
+		if (event.keyCode === 13) {
+			visibleClasses[0].click();
+		}
+	});
 });
 
 function getElementByXpath(path) {
