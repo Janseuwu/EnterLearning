@@ -6,7 +6,7 @@ let classListSearch = getElementByXpath(CLASS_SEARCH_XPATH);
 // We want to execute some code every time the enter key is pressed
 // inside the searchbox...
 classListSearch.addEventListener("keydown", event => {
-	if (event.keyCode === 13) {
+	if (event.key === "Enter") {
 		// First we find all the visible children of the list of
 		// classes under the search box. The page's code just hides the
 		// one's that aren't visible.
