@@ -3,21 +3,26 @@ const CLASS_SEARCH_XPATH = "/html/body/form/header/div[1]/nav[1]/ul/li[2]/div/di
 
 let classListSearch = getElementByXpath(CLASS_SEARCH_XPATH);
 
-classListSearch.addEventListener("input", () => {
-	let visibleClasses = [];
-	let classList = getElementByXpath(CLASS_LIST_XPATH);
-	for (const child of classList.children) {
+classListSearch.addEventListener("keydown", event => {
+	if (event.keyCode === 13) {
+		let classList = getElementByXpath(CLASS_LIST_XPATH);
+		const visibleClasses = findVisibleChildren(classList);
+		const innerLink = visibleClasses[0].firstElementChild;
+		innerLink.click();
+	}
+});
+
+function findVisibleChildren(element) {
+	let visibleChildren = [];
+
+	for (const child of element.children) {
 		if (child.style.display !== "none") {
-			visibleClasses.push(child.firstElementChild);
+			visibleChildren.push(child);
 		}
 	}
 
-	document.addEventListener("keyup", event => {
-		if (event.keyCode === 13) {
-			visibleClasses[0].click();
-		}
-	});
-});
+	return visibleChildren;
+}
 
 function getElementByXpath(path) {
 	return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
