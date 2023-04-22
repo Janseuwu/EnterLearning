@@ -1,18 +1,17 @@
-const class_view_xpath = "/html/body/form/header/div[1]/nav[1]/ul/li[2]/div/div[4]";
-const class_list_xpath = "/html/body/form/header/div[1]/nav[1]/ul/li[2]/div/div[4]/ul";
+const CLASS_LIST_XPATH = "/html/body/form/header/div[1]/nav[1]/ul/li[2]/div/div[4]/ul";
+const CLASS_SEARCH_XPATH = "/html/body/form/header/div[1]/nav[1]/ul/li[2]/div/div[2]/div[1]/input";
 
-const class_list_search_xpath = "/html/body/form/header/div[1]/nav[1]/ul/li[2]/div/div[2]/div[1]/input";
-var class_list_search = getElementByXpath(class_list_search_xpath);
+var classListSearch = getElementByXpath(CLASS_SEARCH_XPATH);
 
-class_list_search.addEventListener("input", function() {
-	visible_classes = []
-	let class_list = getElementByXpath(class_list_xpath);
-	for (const child of class_list.children) {
-		if ( child.style.display == "none" ) {} else {visible_classes.push(child.firstElementChild)}
+classListSearch.addEventListener("input", function() {
+	visibleClasses = []
+	var classList = getElementByXpath(CLASS_LIST_XPATH);
+	for (const child of classList.children) {
+		if ( child.style.display == "none" ) {} else {visibleClasses.push(child.firstElementChild)}
 	}
 	document.addEventListener("keyup", function(event) {
 		if ( event.keyCode == "13" ) {
-			visible_classes[0].click();	
+			visibleClasses[0].click();	
 		};
 	});	
 });
