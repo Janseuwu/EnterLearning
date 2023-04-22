@@ -1,11 +1,11 @@
 const CLASS_LIST_XPATH = "/html/body/form/header/div[1]/nav[1]/ul/li[2]/div/div[4]/ul";
 const CLASS_SEARCH_XPATH = "/html/body/form/header/div[1]/nav[1]/ul/li[2]/div/div[2]/div[1]/input";
 
-var classListSearch = getElementByXpath(CLASS_SEARCH_XPATH);
+let classListSearch = getElementByXpath(CLASS_SEARCH_XPATH);
 
 classListSearch.addEventListener("input", function() {
-	visibleClasses = []
-	var classList = getElementByXpath(CLASS_LIST_XPATH);
+	let visibleClasses = []
+	let classList = getElementByXpath(CLASS_LIST_XPATH);
 	for (const child of classList.children) {
 		if ( child.style.display == "none" ) {} else {visibleClasses.push(child.firstElementChild)}
 	}
