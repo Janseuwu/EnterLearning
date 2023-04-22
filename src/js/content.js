@@ -9,12 +9,12 @@ classListSearch.addEventListener("keydown", event => {
 	if (event.key === "Enter") {
 		// First we find all the visible children of the list of
 		// classes under the search box. The page's code just hides the
-		// one's that aren't visible.
+		// one's that don't match the search query.
 		let classList = getElementByXpath(CLASS_LIST_XPATH);
 		const visibleClasses = findVisibleChildren(classList);
 
-		// Then we extract the link inside the list element. The class
-		// list looks something like:
+		// Then we extract the link inside the list element. The DOM
+		// tree looks something like:
 		//
 		// <ul>
 		// 	<li>
