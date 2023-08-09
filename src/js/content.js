@@ -1,11 +1,23 @@
 const CLASS_LIST_XPATH = "/html/body/form/header/div[1]/nav[1]/ul/li[2]/div/div[4]/ul";
 const CLASS_SEARCH_XPATH = "/html/body/form/header/div[1]/nav[1]/ul/li[2]/div/div[2]/div[1]/input";
-
 let classListSearch = getElementByXpath(CLASS_SEARCH_XPATH);
+let classNum = 0;
 
-// We want to execute some code every time the enter key is pressed
-// inside the searchbox...
+
 classListSearch.addEventListener("keydown", event => {
+	if (event.key === "ArrowDown") {	
+		let classList = getElementByXpath(CLASS_LIST_XPATH);
+		const visibleClasses = findVisibleChildren(classList);
+		if (classNum != 0) {
+			let classNum = 0;
+		} else {
+		}
+		
+		const innerlink = visibleclasses[beepboop].firstelementchild;
+	}
+
+	// We want to execute some code every time the enter key is pressed
+	// inside the searchbox...
 	if (event.key === "Enter") {
 		// First we find all the visible children of the list of
 		// classes under the search box. The page's code just hides the
@@ -30,7 +42,7 @@ classListSearch.addEventListener("keydown", event => {
 		// variable visibleClasses now contains the a list of the <li>
 		// elements that are visible. The variable innerLink will come
 		// to contain a reference to a <a> element.
-		const innerLink = visibleClasses[0].firstElementChild;
+		const innerlink = visibleclasses[0].firstelementchild;
 		innerLink.click();
 	}
 });
