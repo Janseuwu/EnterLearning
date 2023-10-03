@@ -1,7 +1,10 @@
 # EnterLearning
 
-EnterLearning is a browser extension for ItsLearning, that allows the user to
-search for classes using the "Enter" key.
+EnterLearning is a browser extension for ItsLearning, that enables various of features to the site. For a full list of features, see [features] (#Features)
+
+# Features
+* Enables the use of the "Enter" key under class search
+* Automatically clicks the stay-on-site button when you're about to get logged out
 
 ## Installation
 
