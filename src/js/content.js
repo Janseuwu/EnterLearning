@@ -15,6 +15,7 @@ var observer = new MutationObserver(() => {
 });
 // Observe every change in the body
 // TODO: Don't detect every change in the body, but rather a more specific element for more effeciency
+// TODO: Also actually make it work cause it doesn't :D
 observer.observe(document.body, {childList: true});
 
 classListSearch.addEventListener("keydown", event => {
