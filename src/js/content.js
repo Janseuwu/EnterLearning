@@ -2,23 +2,6 @@ const CLASS_LIST_XPATH = "/html/body/form/header/div[1]/nav[1]/ul/li[2]/div/div[
 const CLASS_SEARCH_XPATH = "/html/body/form/header/div[1]/nav[1]/ul/li[2]/div/div[2]/div[1]/input";
 let classListSearch = getElementByXpath(CLASS_SEARCH_XPATH);
 
-/*
-// We want to press the "stay-on-site" button whenever it pops up.
-// This is to prevent the user from getting logged out when inactive for too long
-var observer = new MutationObserver(() => {
-	// Whenever a change happens, try and locate the button
-	var stayBtn = document.body.querySelector("#rnd8pj1um");
-	// If the button is present, click it
-	if ( stayBtn ) {
-		stayBtn.click();
-		console.log("Automatic logout prevented!");
-	}
-});
-// Observe every change in the DOM
-// TODO: Don't detect every change in the entire DOM, but rather a more specific element for more effeciency
-observer.observe(document, {childList: true});
-*/
-
 classListSearch.addEventListener("keydown", event => {
 
 	// We want to execute some code every time the enter key is pressed
