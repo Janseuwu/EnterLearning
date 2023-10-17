@@ -16,5 +16,14 @@
 			"matches": ["*://*.itslearning.com/*"],
 			"js": ["js/content.js"]
 		}
-	]
+	],
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"*://*.itslearning.com/*"
+	],
+	"background": {
+  		"scripts": ["js/background.js"]
+	}
+
 }

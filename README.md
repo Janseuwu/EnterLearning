@@ -1,12 +1,16 @@
 # EnterLearning
 
-EnterLearning is a browser extension for ItsLearning, that allows the user to
-search for classes using the "Enter" key.
+EnterLearning is a browser extension for ItsLearning, that adds various features to the site,
+such as enabling the use of "Enter" under class search. For a full list of features see [Features](#Features)
 
 ## Installation
 
-First, clone the repo with `git clone`. Afterwards, follow the installation
-instructions for your browser. The `src/` directory contains everything needed
+The extension for firefox can be found on [Mozilla's Add-on site](https://addons.mozilla.org/en-US/firefox/addon/enterlearning/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+For Chrome users, we are still working on uploading it to the webshop. For now, you can manually install it.
+
+### Cloning the repo
+
+Clone the repo with `git clone`. The `src/` directory contains everything needed
 for the extension including assets and manifest.
 
 ### Chrome installation
@@ -20,13 +24,12 @@ for the extension including assets and manifest.
 
 The extension is now installed and ready to use.
 
-### Firefox installation
+## Features
+Here is a full list of features
 
-We are currently waiting for a signature, which is required by Firefox for permanent
-installation. You can, however, install it temporarily using the `web-ext` tool
-or the `about:debugging` page.
+- Enable the use of "Enter" under class search
+- Remove the autologout functionality from the site
 
-## Todo
-
-- Fix the errors it gives (it still works :D)
-- Sign the Firefox extension.
+## Feedback and PR's
+If you find bugs, errors or want to add something to the extension, you can reach me at jaxziiii174@gmail.com. Feel free to do a PR too.
+Don't forget to rate the extension on the webstores!
