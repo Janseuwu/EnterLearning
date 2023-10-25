@@ -7,7 +7,6 @@ classListSearch.addEventListener("keydown", event => {
 	// We want to execute some code every time the enter key is pressed
 	// inside the searchbox...
 	if (event.key === "Enter") {
-		console.log("class enter");
 		// First we find all the visible children of the list of
 		// classes under the search box. The page's code just hides the
 		// one's that don't match the search query.

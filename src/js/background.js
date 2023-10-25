@@ -8,7 +8,7 @@
 const extraInfoSpec = ["blocking"]; 
 
 // We only want to block requests matching this pattern
-const filter = {urls: ["https://cdn.itslearning.com/v3.142.3.446/application/autologout/index.bundle.js"]};
+const filter = {urls: ["https://cdn.itslearning.com/*/application/autologout/index.bundle.js"]};
 
 // Listener for webRequests
 browser.webRequest.onBeforeRequest.addListener(
