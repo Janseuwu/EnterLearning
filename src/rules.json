@@ -1,0 +1,10 @@
+[
+	{
+		"id": 1,
+		"condition": {
+			"urlFilter": "autologout",
+			"excludedResourceTypes": []
+		},	
+		"action": { "type": "block" }
+	}
+]
