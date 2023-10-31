@@ -5,7 +5,7 @@ such as enabling the use of "Enter" under class search. For a full list of featu
 
 ## Installation
 
-The extension for firefox can be found on [Mozilla's Add-on site](https://addons.mozilla.org/en-US/firefox/addon/enterlearning/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+The extension for firefox can be found on [Mozilla's Add-on site](https://addons.mozilla.org/en-US/firefox/addon/enterlearning/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search).
 For Chrome users, we are still working on uploading it to the webshop. For now, you can manually install it.
 
 ### Cloning the repo
