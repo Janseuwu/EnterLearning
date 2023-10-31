@@ -1,3 +1,5 @@
 /chromeCRX
 /src/web-ext-artifacts
 /chrome
+/src/_metadata
+/src/backup-manifest.json

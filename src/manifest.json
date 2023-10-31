@@ -19,6 +19,8 @@
 		"declarativeNetRequest"
 	],
 
+	"host_permissions": ["*://*.itslearning.com/*"],
+
 	"declarative_net_request": {
 		"rule_resources": [{
 			"id": "ruleset",
