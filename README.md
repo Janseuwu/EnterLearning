@@ -5,24 +5,21 @@ such as enabling the use of "Enter" under class search. For a full list of featu
 
 ## Installation
 
-The extension for firefox can be found on [Mozilla's Add-on site](https://addons.mozilla.org/en-US/firefox/addon/enterlearning/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search).
-For Chrome users, we are still working on uploading it to the webshop. For now, you can manually install it.
+#### Chrome
+The extension for Chrome can be found on the [Chrome webstore](https://chrome.google.com/webstore/detail/enterlearning/mkhcjdopceldkjggmefcikdckkobkonc?hl=da).
 
-### Cloning the repo
+#### Firefox
+The extension for Firefox can be found on [Mozilla's Add-on site](https://addons.mozilla.org/en-US/firefox/addon/enterlearning/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search).
 
-Clone the repo with `git clone`. The `src/` directory contains everything needed
-for the extension including assets and manifest.
+The Firefox version is known to have issues, due to some host permission issues Firefox has yet to resolve.
+This can be solved by manually giving the addon the needed permissions. 
 
-### Chrome installation
+To do so, follow these simple steps:
+* Go to [about:addons](about:addons)
+* Locate and select the EnterLearning extension
+* Go to the `permissions` tab and switch on the "Access your data for sites in the `*://itslearning.com` domain".
 
-- Open chrome
-- Click on the three dots in the top right corner
-- More tools > Extensions
-- Enable developer mode in the top right corner
-- Click "Load unpacked"
-- Select the cloned "chrome" directory
-
-The extension is now installed and ready to use.
+That's it! The extension should now be fully functional.
 
 ## Features
 Here is a full list of features
@@ -31,5 +28,5 @@ Here is a full list of features
 - Remove the autologout functionality from the site
 
 ## Feedback and PR's
-If you find bugs, errors or want to add something to the extension, you can reach me at jaxziiii174@gmail.com. Feel free to do a PR too.
+If you find bugs, errors or want to add something to the extension, you can find me on Discord - janseuwu. Feel free to do a PR too.
 Don't forget to rate the extension on the webstores!
